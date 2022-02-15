@@ -5,22 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,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" type "image=" " -icon"="" />
+    <link rel="shortcut icon" href="data:image/png;base64,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" type "image=" " -icon"="" />
+    <style>
+        .btn {
+    text-decoration: none;
+    border: 15px #349FFC  solid;
+    background: #349FFC ;
+    outline: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    width: 120px;
+    height: 50px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    text-decoration: none;
+    border:15px #034885  solid;
+    background-color: #034885;
+}
+
+.btn:active {
+    text-decoration: none;
+    border: 15px #408bee solid;
+    background: #408bee;
+}
+
+a {
+    color: #408bee;
+    text-decoration:none
+}
+
+a:hover {
+    color:red ;
+    text-decoration:none
+}
+    </style>
     <title>LoveU</title>
 </head>
 
-<body leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart ='return false' οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false' οnmοuseup='document.selection.empty()'>
+<body leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart='return false'
+    οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false'
+    οnmοuseup='document.selection.empty()'>
     <div style="text-align: center;">
         <h1>
             Love<font color="blue">U</font> Haxx
         </h1>
         <hr />
         <br />
-        <h1><a href="haxx.html">
+        <br />
+        <br />
+        <br />
+        <h1><a class="btn" href="haxx.html">
                 一键破解
             </a></h1>
-        （适用于5.5.x版本）
-                <br />
-        教程请参阅：<a href="https://wiiu.hacks.guide/#/zh_CN/">Hacks.Guide</a>
+        <br />
+        <br />
+        <br />
+        <br />
+        （适用于5.5.X版本）
+        <br />
+        将会加载SD:/wiiu/payload.elf文件，请确保你拥有它
+        <br />
+        <h2><a href="https://wiiu.hacks.guide/#/zh_CN/tiramisu/browser-exploit" target="_blank" >需要帮助吗</a></h2>
+        <br />
+        <hr />
+        Powered by GitHub
+        <br />
+        <a href="https://github.com/LittleFIve233/LoveU">Source Code</a>
     </div>
 </body>
 
